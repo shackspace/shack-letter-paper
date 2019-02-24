@@ -6,8 +6,8 @@ services:
     build: .
     container_name: latex-build
     volumes:
-    - ./letter:/letter
-    working_dir: /letter
+    - ./latex:/latex
+    working_dir: /latex
     stdin_open: true
     tty: true
     entrypoint: bash
