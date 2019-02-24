@@ -1,0 +1,5 @@
+# Start it
+docker-compose up -d
+
+# Run it
+docker-compose exec latex-build pdflatex shack.tex

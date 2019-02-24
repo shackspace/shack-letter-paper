@@ -1,0 +1,13 @@
+version: '2'
+
+services:
+  latex-build:
+    image: latex-build:latest
+    build: .
+    container_name: latex-build
+    volumes:
+    - ./letter:/letter
+    working_dir: /letter
+    stdin_open: true
+    tty: true
+    entrypoint: bash
