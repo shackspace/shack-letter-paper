@@ -10,4 +10,4 @@ services:
     working_dir: /latex
     stdin_open: true
     tty: true
-    entrypoint: bash
+    entrypoint: "pdflatex shack.tex"
